@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--不定义ID，也不定义name，那么Spring会默认一个ID名称，这个名称是该类的全包名+类名+#0-->
+    <bean   class="com.hzj.entity.Stu" />
+    <!--定义ID,ID名称是全局唯一的-->
+    <bean  id="stu"  name="stu3,stu4,stu5" class="com.hzj.entity.Stu" />
+    <!--name是别名的意识,别名可以有多个-->
+    <bean name="stu2,stu_2_1,stu_2_3,stu_2_4" class="com.hzj.entity.Stu" />
+
+
+
+
+
+
+
+
+</beans>
